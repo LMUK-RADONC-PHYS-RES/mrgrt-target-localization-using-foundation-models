@@ -1,0 +1,38 @@
+
+# MacOS related
+.DS_Store
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Lockfile pip
+Pipfile.lock
+
+# Lockfile poetry
+poetry.lock
+
+# Environments
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Pytest cache
+.pytest_cache/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Ignore the model weights and model checkpoints
+checkpoints/*.pt
+checkpoints/*.pth
