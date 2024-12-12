@@ -6,7 +6,7 @@ It can also be used as a starting point for similar projects.
 
 ## Data
 
-This repository is not published with any 2D+t CineMRI data. For example purposes the `generate_example_sequence.py` script can generate an image sequence of an oscillating circle.
+This repository is not published with any 2D+t CineMRI data. For example purposes the `generate_example_sequence.py` script can generate an noisy image sequence of an oscillating circle.
 
 Interested readers are encoraged to implement data loading routines for their own specific dataformats.
 
@@ -28,7 +28,7 @@ curl -L -O https://huggingface.co/facebook/cotracker/resolve/main/cotracker2.pth
 curl -L -O https://github.com/THU-MIG/RepViT/releases/download/v1.0/repvit_sam.pt
 
 # verify sha256 checksums
-echo "362f5274376d610dc987b6daf2c2fefe63e06e1835f4ec1a10d0a15c5a4eef4f  sam2_hiera_small.pt" | sha256sum -c 
+echo "95949964d4e548409021d47b22712d5f1abf2564cc0c3c765ba599a24ac7dce3  sam2_hiera_small.pt" | sha256sum -c 
 echo "7442e4e9b732a508f80e141e7c2913437a3610ee0c77381a66658c3a445df87b  sam2_hiera_large.pt" | sha256sum -c 
 echo "362f5274376d610dc987b6daf2c2fefe63e06e1835f4ec1a10d0a15c5a4eef4f  cotracker2.pth" | sha256sum -c 
 echo "1fd2867cf669e6d89b1c91d0eb883d83ef4bcc590143dd2ca35e2705b21a4f2f  repvit_sam.pt" | sha256sum -c 
@@ -50,7 +50,17 @@ Additionally, the project makes use of a number of open source models, for which
 Please cite the following paper when making use of the presented code:
 
 ```bibtex
-
+@article{Bloecker2024,
+  title = {MRgRT real-time target localization using foundation models for contour point tracking and promptable mask refinement},
+  ISSN = {1361-6560},
+  url = {http://dx.doi.org/10.1088/1361-6560/ad9dad},
+  DOI = {10.1088/1361-6560/ad9dad},
+  journal = {Physics in Medicine &amp; Biology},
+  publisher = {IOP Publishing},
+  author = {Bl\"{o}cker,  Tom Julius and Lombardo,  Elia and Marschner,  Sebastian and Belka,  Claus and Corradini,  Stefanie and Palacios,  Miguel A and Riboldi,  Marco and Kurz,  Christopher and Landry,  Guillaume},
+  year = {2024},
+  month = dec 
+}
 ```
 
 ## License
