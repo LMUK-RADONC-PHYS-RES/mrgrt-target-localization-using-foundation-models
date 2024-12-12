@@ -6,7 +6,7 @@ It can also be used as a starting point for similar projects.
 
 ## Data
 
-This repository is not published with any 2D+t CineMRI data. For example purposes the `generate_example_sequence.py` script can generate an noisy image sequence of an oscillating circle.
+This repository does not contain any 2D+t CineMRI data. For example purposes the `generate_example_sequence.py` script can generate an (noisy) image sequence of a circle oscillating up and down.
 
 Interested readers are encoraged to implement data loading routines for their own specific dataformats.
 
